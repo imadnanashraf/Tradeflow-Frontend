@@ -1,0 +1,11 @@
+
+.hero-btn{
+    margin : 0 auto;
+    width : 15%
+}
+
+@media(max-width: 500px){
+    .hero-btn{
+        width: 60%;
+    }
+}
