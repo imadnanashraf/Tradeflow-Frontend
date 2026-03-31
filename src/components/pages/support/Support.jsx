@@ -1,4 +1,4 @@
-import Hero from "../home/Hero";
+import Hero from "./Hero";
 import RaiseTickets from "./RaiseTickets";
 
 function Support() {

@@ -12,7 +12,7 @@ function Footer(){
                 />
                 <p>
                   {" "}
-                  &copy; 2010 - 2026, Zerodha Broking Ltd. All rights
+                  &copy; 2010 - 2026, Tradeflow Broking Ltd. All rights
                   reserved.{" "}
                 </p>
               </div>
@@ -23,9 +23,9 @@ function Footer(){
                 <a href="#">Pricing</a> <br />
                 <a href="#">Referral programme</a> <br />
                 <a href="#">Careers</a> <br />
-                <a href="#">Zerodha. tech</a> <br />
+                <a href="#">Tradeflow. tech</a> <br />
                 <a href="#">Press & media</a> <br />
-                <a href="#">Zerodha cares (CSR)</a> <br />
+                <a href="#">Tradeflow cares (CSR)</a> <br />
               </div>
 
               <div className="col">

@@ -1,9 +1,23 @@
-function RightImageSection() {
-    return ( 
-        <>
-        <h1>Right Image Section</h1>
-        </>
-     );
+function RightImageSection({ imageURL, productName, productDesription, learnMore }) {
+    
+    return (
+      <div className="container mt-5">
+        
+        <div className="row img-sec">
+          <div className="col-6 p-5 mt-5">
+            <h1>{productName}</h1>
+            <p>{productDesription}</p>
+            <div>
+              <a href={learnMore}>Learn More</a>
+            </div>
+          </div>
+          <div className="col-6">
+            <img src={imageURL} />
+          </div>
+        </div>
+        
+      </div>
+    );
 }
 
 export default RightImageSection;

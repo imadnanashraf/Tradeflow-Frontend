@@ -10,3 +10,40 @@
     font-size: 14px;
     font-weight: 400;
 }
+
+.active-link{
+    color: #387ed1;
+    font-weight: 500;
+}
+
+.img-sec a{
+    text-decoration: none;
+}
+
+#supportHero{
+  background-color: rgb(56, 126, 209);
+  color: white;
+}
+
+#supportHero a{
+  color: white;
+  text-decoration: none;
+  padding-right: 50px;
+  margin-right: 10px ;
+}
+
+
+
+#supportWrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+
+#supportHero input{
+  padding: 20px 50px;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+}

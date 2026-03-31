@@ -1,20 +1,19 @@
+import { Link, NavLink  } from "react-router";
+
 function Navbar() {
   return (
     <>
-
-    
-
       <nav
         class="navbar navbar-expand-lg border-bottom"
         style={{ backgroundColor: "#fff" }}
       >
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <NavLink class="navbar-brand" to="/">
             <img
               src="media/images/TRADEFLOW-LOGO.png"
               style={{ width: "25%" }}
             />
-          </a>
+          </NavLink>
           <button
             class="navbar-toggler"
             type="button"
@@ -26,48 +25,43 @@ function Navbar() {
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
-
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarScroll"
+          >
             <form class="d-flex " role="search">
-                
-              <ul class="navbar-nav me-auto my-2 my-lg-0 " >
-                
+              <ul class="navbar-nav me-auto my-2 my-lg-0 ">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">
+                  <NavLink className={ ({ isActive })  => isActive ? "nav-link  active-link" : "nav-link" }  aria-current="page" to="/signup">
                     Signup
-                  </a>
+                  </NavLink>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <NavLink className={ ({ isActive })  => isActive ? "nav-link  active-link" : "nav-link" } aria-current="page" to="/about">
                     About
-                  </a>
+                  </NavLink>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <NavLink className={ ({ isActive })  => isActive ? "nav-link  active-link" : "nav-link" } aria-current="page" to="/product">
                     Product
-                  </a>
+                  </NavLink>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <NavLink className={ ({ isActive })  => isActive ? "nav-link  active-link" : "nav-link" } aria-current="page" to="/pricing">
                     Pricing
-                  </a>
+                  </NavLink>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <NavLink className={ ({ isActive })  => isActive ? "nav-link  active-link" : "nav-link" } aria-current="page" to="/support">
                     Support
-                  </a>
+                  </NavLink>
                 </li>
-
-                
-                
               </ul>
             </form>
-
-
           </div>
         </div>
       </nav>
